@@ -17,6 +17,7 @@ import { NgdVersionService } from '../../services';
     </div>
     <div class="section middle">
       <nb-menu [items]="mainMenu"></nb-menu>
+      <ngd-search></ngd-search>
       <nb-select class="version-select" [selected]="currentVersion" (selectedChange)="redirectToVersion($event)">
         <nb-option *ngFor="let version of versions" [value]="version">
           {{ version }}
@@ -51,13 +52,12 @@ export class NgdHeaderComponent implements OnInit {
       link: '/components/components-overview',
     },
     {
-      title: 'Theme System',
-      link: '/guides/theme-system',
+      title: 'Design System',
+      link: '/design-system/eva-design-system-intro',
     },
   ];
 
   @Input() sidebarTag: string;
-
   constructor(
     @Inject(NB_WINDOW) window,
     private versionService: NgdVersionService,

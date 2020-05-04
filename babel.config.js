@@ -1,28 +1,38 @@
 const path = require('path');
 
-const kittenPath = path.resolve('./src/framework');
+/**
+ * UI Kitten modules aliases (needed for Jest resolver)
+ */
+const moduleAliases = {
+  '@ui-kitten/components': path.resolve(__dirname, './src/components'),
+  '@ui-kitten/eva-icons': path.resolve(__dirname, './src/eva-icons'),
+  '@ui-kitten/moment': path.resolve(__dirname, './src/moment'),
+  '@ui-kitten/date-fns': path.resolve(__dirname, './src/date-fns'),
+};
 
-// FIXME: Resolve `transform[stderr]: Could not resolve` command-line warnings.
-// FIXME: Reproducible when starting with clearing cache (npm start -- -c)
+const moduleInternalAliases = {
+  '@kitten/theme': path.resolve(__dirname, './src/components/theme'),
+  '@kitten/ui': path.resolve(__dirname, './src/components/ui'),
+};
 
 const moduleResolverConfig = {
   root: path.resolve('./'),
   alias: {
-    '@kitten/theme': path.resolve(kittenPath, 'theme'),
-    '@kitten/ui': path.resolve(kittenPath, 'ui'),
+    ...moduleAliases,
+    ...moduleInternalAliases,
   },
 };
 
+const presets = [
+  'module:metro-react-native-babel-preset',
+];
+
+const plugins = [
+  ['module-resolver', moduleResolverConfig],
+];
+
 module.exports = function(api) {
   api.cache(true);
-
-  const presets = [
-    'module:metro-react-native-babel-preset',
-  ];
-
-  const plugins = [
-    ['module-resolver', moduleResolverConfig],
-  ];
-
   return { presets, plugins };
 };
+

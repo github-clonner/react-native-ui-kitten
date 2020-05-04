@@ -1,5 +1,5 @@
 
-# UI Kitten [<img src="https://i.imgur.com/oMcxwZ0.png" alt="Eva Design System" height="20px" />][link:eva] [![npm][badge:license]]() [![Build Status][badge:travis]][link:travis] [![Coverage Status][badge:coveralls]][link:coveralls]
+# UI Kitten [<img src="https://i.imgur.com/oMcxwZ0.png" alt="Eva Design System" height="20px" />][link:eva] [![npm][badge:license]]() [![Build Status][badge:github-actions]][link:github-actions] [![Coverage Status][badge:coveralls]][link:coveralls]
 
 [Documentation][link:doc-homepage]
 
@@ -10,17 +10,21 @@ And the most awesome thing: the themes can be changed in the runtime, with no ne
 
 100% Free and Open Source!
 
+![Kitten Material](https://camo.githubusercontent.com/f0487d92194f3c685213539c53e9784113cd8a4b/68747470733a2f2f692e696d6775722e636f6d2f58384f344748622e706e67)
+
 [<img src="https://i.imgur.com/pYl0trU.jpg">][link:doc-homepage]
 
 ## What's included
 
-- **20+ general-purpose components** designed and tested to save your time.
+- **25+ general-purpose components** designed and tested to save your time.
 
 - **Comprehensive clear documentation** with the tons of examples.
 
-- **Theming System.** Use Light and modern Dark themes and create your own.
+- **Theming System -** Use Light and modern Dark themes and create your own.
 
-- **Eva Design System Support.** Construct an interface using basic components following Eva specifications and it will always have a stunning design.
+- **SVG Eva Icons support -** 480+ general purpose icons
+
+- **Eva Design System Support -** Construct an interface using basic components following Eva specifications and it will always have a stunning design.
 
 ## Starter App
 
@@ -31,31 +35,26 @@ There is a huge variety of customizable layouts, use “as is” or add new bloc
 
 ## Quick Start
 
-Install UI Kitten and Eva Design System packages via npm:
+Start a new app with UI Kitten template from a scratch:
 
 ```bash
-npm i react-native-ui-kitten @eva-design/eva
+npx react-native init MyApp --template @ui-kitten/template-js
 ```
 
-Modify your application root:
+Or, if you want to init with TypeScript:
 
-```jsx
-import React from 'react';
-import { mapping, light as lightTheme } from '@eva-design/eva';
-import { ApplicationProvider } from 'react-native-ui-kitten';
-import { Application } from './path-to/application.component';
-
-export default App = () => (
-  <ApplicationProvider 
-    mapping={mapping}
-    theme={lightTheme}
-    <Application/>
-  </ApplicationProvider>
-);
+```bash
+npx react-native init MyApp --template @ui-kitten/template-ts
 ```
 
-The code above will configure your application component to apply Eva Design System styling magic.
-Read the [Theme System guide][link:doc-theme-system] for more details.
+This will setup a new React Native application configured with UI Kitten.
+Refer to the [Documentation][link:doc-where-start] for more options to start.
+
+## Mobile backend Bundles
+
+Easy way to integrate UI Kitten with backend ([Java][link:ui-kitten-bundle-java], [.NET Core][link:ui-kitten-bundle-dotnet-core]).
+
+[<img src="https://i.imgur.com/HVNZQGR.jpg">][link:ui-kitten-bundles]
 
 ## How can I support the developers?
 - Star our GitHub repo :star:
@@ -75,17 +74,20 @@ Made with :heart: by [Akveo team][link:akveo-homepage]. Follow us on [Twitter][l
 We're always happy to receive your feedback!
 
 [badge:license]: https://img.shields.io/npm/l/react-native-ui-kitten.svg
-[badge:travis]: https://travis-ci.com/akveo/react-native-ui-kitten.svg?branch=master
+[badge:github-actions]: https://github.com/akveo/react-native-ui-kitten/workflows/Build/badge.svg
 [badge:coveralls]: https://coveralls.io/repos/github/akveo/react-native-ui-kitten/badge.svg?branch=master
 
-[link:eva]: https://eva.design
-[link:travis]: https://travis-ci.com/akveo/react-native-ui-kitten
+[link:eva]: https://hubs.ly/H0n6Dd90
+[link:github-actions]: https://github.com/akveo/react-native-ui-kitten/actions
 [link:coveralls]: https://coveralls.io/github/akveo/react-native-ui-kitten?branch=master
-[link:doc-homepage]: https://akveo.github.io/react-native-ui-kitten
-[link:doc-theme-system]: https://akveo.github.io/react-native-ui-kitten/docs/guides/theme-system
+[link:doc-homepage]: https://hubs.ly/H0n6CZJ0
+[link:doc-where-start]: https://hubs.ly/H0n6Ddg0
 [link:kitten-tricks]: https://github.com/akveo/kittenTricks
 [link:eva-icons]: https://github.com/akveo/eva-icons
-[link:akveo-homepage]: https://akveo.com
+[link:akveo-homepage]: https://hubs.ly/H0n6Dd50
 [link:akveo-medium]: https://medium.com/akveo-engineering
 [link:akveo-twitter]: https://twitter.com/akveo_inc
 [link:akveo-facebook]: https://www.facebook.com/akveo
+[link:ui-kitten-bundles]: https://hubs.ly/H0n6Ddn0
+[link:ui-kitten-bundle-java]: https://hubs.ly/H0n6C-00
+[link:ui-kitten-bundle-dotnet-core]: https://hubs.ly/H0n6C-10

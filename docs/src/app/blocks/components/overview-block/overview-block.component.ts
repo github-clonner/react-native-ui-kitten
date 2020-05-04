@@ -19,10 +19,11 @@ import {
           <ng-container>
             <div [innerHTML]="description"
                  [ngStyle]="hasImage && {'margin-bottom': '16px'}"></div>
-            <img
-              *ngFor="let image of images"
-              src={{image}}
-            />
+            <ngd-stacked-example-block
+              *ngFor="let example of source.overviewExamples"
+              [content]="example"
+              class="widget-block">
+            </ngd-stacked-example-block>
           </ng-container>
         </ng-container>
       </nb-card-body>
@@ -44,9 +45,8 @@ export class NgdOverviewBlockComponent {
   }
 
   private prepareDescription(source): any {
-    this.description = source.description.replace('undefined', '');
+    this.description = source.description;
     this.images = source.images.map((image: string) => `assets/images/overview/${image}`);
     return source;
   }
-
 }

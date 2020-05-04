@@ -5,12 +5,12 @@ export const structure = [
     children: [
       {
         type: 'page',
-        name: 'What is React Native UI Kitten?',
+        name: 'What is UI Kitten?',
         children: [
           {
             type: 'block',
             block: 'markdown',
-            source: 'index.md',
+            source: 'getting-started/what-is-ui-kitten.md',
           },
         ],
       },
@@ -21,7 +21,7 @@ export const structure = [
           {
             type: 'block',
             block: 'markdown',
-            source: 'start.md',
+            source: 'getting-started/where-to-start.md',
           },
         ],
       },
@@ -33,56 +33,198 @@ export const structure = [
     children: [
       {
         type: 'page',
-        name: 'Add into existing project',
+        name: 'Getting Started',
         children: [
           {
             type: 'block',
             block: 'markdown',
-            source: 'install-into-existing.md',
+            source: 'guides/getting-started.md',
           },
         ],
       },
       {
         type: 'page',
-        name: 'Theme System',
+        name: 'Branding',
         children: [
           {
             type: 'block',
             block: 'markdown',
-            source: 'theme-system.md',
+            source: 'guides/branding.md',
           },
         ],
       },
       {
         type: 'page',
-        name: 'Creating Styled Components',
+        name: 'Icon Packages',
         children: [
           {
             type: 'block',
             block: 'markdown',
-            source: 'theme-using-mapping.md',
+            source: 'guides/icon-packages.md',
           },
         ],
       },
       {
         type: 'page',
-        name: 'Creating Themed Components',
+        name: 'Configure Navigation',
         children: [
           {
             type: 'block',
             block: 'markdown',
-            source: 'theme-using-variables.md',
+            source: 'guides/configure-navigation.md',
           },
         ],
       },
       {
         type: 'page',
-        name: 'Theme Switching',
+        name: 'Runtime Theming',
         children: [
           {
             type: 'block',
             block: 'markdown',
-            source: 'theme-switching.md',
+            source: 'guides/runtime-theming.md',
+          },
+        ],
+      },
+      {
+        type: 'page',
+        name: 'Running on the Web',
+        children: [
+          {
+            type: 'block',
+            block: 'markdown',
+            source: 'guides/running-on-the-web.md',
+          },
+        ],
+      },
+      {
+        type: 'page',
+        name: 'Improving Performance',
+        children: [
+          {
+            type: 'block',
+            block: 'markdown',
+            source: 'guides/improving-performance.md',
+          },
+        ],
+      },
+    ],
+  },
+  {
+    type: 'section',
+    name: 'Design System',
+    children: [
+      {
+        type: 'page',
+        name: 'Eva Design System Intro',
+        children: [
+          {
+            type: 'block',
+            block: 'markdown',
+            source: 'design-system/intro.md',
+          },
+        ],
+      },
+      {
+        type: 'page',
+        name: 'Design System Glossary',
+        children: [
+          {
+            type: 'block',
+            block: 'markdown',
+            source: 'design-system/glossary.md',
+          },
+        ],
+      },
+      {
+        type: 'page',
+        name: 'Design System Theme',
+        children: [
+          {
+            type: 'block',
+            block: 'markdown',
+            source: 'design-system/theme.md',
+          },
+        ],
+      },
+      {
+        type: 'page',
+        name: 'Use Theme Variables',
+        children: [
+          {
+            type: 'block',
+            block: 'markdown',
+            source: 'design-system/use-theme-variables.md',
+          },
+        ],
+      },
+      {
+        type: 'page',
+        name: 'Customize Mapping',
+        children: [
+          {
+            type: 'block',
+            block: 'markdown',
+            source: 'design-system/customize-mapping.md',
+          },
+        ],
+      },
+      {
+        type: 'page',
+        name: 'Custom Component Mapping',
+        children: [
+          {
+            type: 'block',
+            block: 'markdown',
+            source: 'design-system/custom-mapping.md',
+          },
+        ],
+      },
+      {
+        type: 'page',
+        name: 'Eva Light Theme',
+        children: [
+          {
+            type: 'block',
+            block: 'theme',
+            name: 'Eva Light',
+            source: 'eva light',
+          },
+        ],
+      },
+      {
+        type: 'page',
+        name: 'Eva Dark Theme',
+        children: [
+          {
+            type: 'block',
+            block: 'theme',
+            name: 'Eva Dark',
+            source: 'eva dark',
+          },
+        ],
+      },
+      {
+        type: 'page',
+        name: 'Material Light Theme',
+        children: [
+          {
+            type: 'block',
+            block: 'theme',
+            name: 'Material Light',
+            source: 'material light',
+          },
+        ],
+      },
+      {
+        type: 'page',
+        name: 'Material Dark Theme',
+        children: [
+          {
+            type: 'block',
+            block: 'theme',
+            name: 'Material Dark',
+            source: 'material dark',
           },
         ],
       },
@@ -108,7 +250,7 @@ export const structure = [
       },
       {
         type: 'tabs',
-        name: 'ApplicationProvider',
+        name: 'Application Provider',
         icon: 'application-provider.svg',
         source: [
           'ApplicationProvider',
@@ -116,7 +258,7 @@ export const structure = [
       },
       {
         type: 'tabs',
-        name: 'styled',
+        name: 'Styled Component',
         icon: 'styled.svg',
         source: [
           'styled',
@@ -124,9 +266,11 @@ export const structure = [
       },
       {
         type: 'tabs',
-        name: 'withStyles',
+        name: 'Themed Component',
         icon: 'with-styles.svg',
         source: [
+          'useTheme',
+          'useStyleSheet',
           'withStyles',
         ],
       },
@@ -158,6 +302,23 @@ export const structure = [
       },
       {
         type: 'tabs',
+        name: 'Card',
+        icon: 'card.svg',
+        source: [
+          'Card',
+          'CardHeader',
+        ],
+      },
+      {
+        type: 'tabs',
+        name: 'Menu',
+        icon: 'menu.svg',
+        source: [
+          'Menu',
+        ],
+      },
+      {
+        type: 'tabs',
         name: 'List',
         icon: 'list.svg',
         source: [
@@ -172,6 +333,20 @@ export const structure = [
         ],
       },
       {
+        type: 'tabs',
+        name: 'Icon',
+        icon: 'icon.svg',
+        source: [
+          'Icon',
+        ],
+        overview: [
+          {
+            name: 'Icon',
+            images: ['icon.png'],
+          },
+        ],
+      },
+      {
         type: 'group',
         name: 'Navigation',
       },
@@ -181,6 +356,7 @@ export const structure = [
         icon: 'top-navigation.svg',
         source: [
           'TopNavigation',
+          'TopNavigationAction',
         ],
         overview: [
           {
@@ -206,7 +382,22 @@ export const structure = [
       },
       {
         type: 'tabs',
-        name: 'ViewPager',
+        name: 'Drawer',
+        icon: 'drawer.svg',
+        source: [
+          'Drawer',
+          'DrawerHeaderFooter',
+        ],
+        overview: [
+          {
+            name: 'Drawer',
+            images: ['drawer.png'],
+          },
+        ],
+      },
+      {
+        type: 'tabs',
+        name: 'View Pager',
         icon: 'view-pager.svg',
         source: [
           'ViewPager',
@@ -231,56 +422,6 @@ export const structure = [
       {
         type: 'group',
         name: 'Forms',
-      },
-      {
-        type: 'tabs',
-        name: 'CheckBox',
-        icon: 'checkbox.svg',
-        source: [
-          'CheckBox',
-        ],
-        overview: [
-          {
-            name: 'CheckBox',
-            images: ['checkbox.png'],
-          },
-        ],
-      },
-      {
-        type: 'tabs',
-        name: 'Radio',
-        icon: 'radio.svg',
-        source: [
-          'Radio',
-        ],
-        overview: [
-          {
-            name: 'Radio',
-            images: ['radio.png'],
-          },
-        ],
-      },
-      {
-        type: 'tabs',
-        name: 'RadioGroup',
-        icon: 'radio-group.svg',
-        source: [
-          'RadioGroup',
-        ],
-      },
-      {
-        type: 'tabs',
-        name: 'Toggle',
-        icon: 'toggle.svg',
-        source: [
-          'Toggle',
-        ],
-        overview: [
-          {
-            name: 'Toggle',
-            images: ['toggle.png'],
-          },
-        ],
       },
       {
         type: 'tabs',
@@ -325,23 +466,89 @@ export const structure = [
         ],
       },
       {
-        type: 'group',
-        name: 'Modals & Overlays',
-      },
-      {
         type: 'tabs',
-        name: 'Overflow Menu',
-        icon: 'menu.svg',
+        name: 'CheckBox',
+        icon: 'checkbox.svg',
         source: [
-          'OverflowMenu',
-          'OverflowMenuItem',
+          'CheckBox',
         ],
         overview: [
           {
-            name: 'OverflowMenu',
-            images: ['overflow-menu.png'],
+            name: 'CheckBox',
+            images: ['checkbox.png'],
           },
         ],
+      },
+      {
+        type: 'tabs',
+        name: 'Toggle',
+        icon: 'toggle.svg',
+        source: [
+          'Toggle',
+        ],
+        overview: [
+          {
+            name: 'Toggle',
+            images: ['toggle.png'],
+          },
+        ],
+      },
+      {
+        type: 'tabs',
+        name: 'Radio',
+        icon: 'radio.svg',
+        source: [
+          'RadioGroup',
+          'Radio',
+        ],
+        overview: [
+          {
+            name: 'Radio',
+            images: ['radio.png'],
+          },
+        ],
+      },
+      {
+        type: 'tabs',
+        name: 'Select',
+        icon: 'select.svg',
+        source: [
+          'Select',
+        ],
+        overview: [],
+      },
+      {
+        type: 'tabs',
+        name: 'Datepicker',
+        icon: 'datepicker.svg',
+        source: [
+          'Datepicker',
+          'RangeDatepicker',
+        ],
+        overview: [
+          {
+            name: 'Datepicker',
+            images: [],
+          },
+        ],
+      },
+      {
+        type: 'tabs',
+        name: 'Autocomplete',
+        icon: 'autocomplete.svg',
+        source: [
+          'Autocomplete',
+        ],
+        overview: [
+          {
+            name: 'Autocomplete',
+            images: [],
+          },
+        ],
+      },
+      {
+        type: 'group',
+        name: 'Modals & Overlays',
       },
       {
         type: 'tabs',
@@ -380,13 +587,27 @@ export const structure = [
         ],
       },
       {
+        type: 'tabs',
+        name: 'Overflow Menu',
+        icon: 'menu.svg',
+        source: [
+          'OverflowMenu',
+        ],
+        overview: [
+          {
+            name: 'OverflowMenu',
+            images: ['overflow-menu.png'],
+          },
+        ],
+      },
+      {
         type: 'group',
         name: 'Extra',
       },
       {
         type: 'tabs',
         name: 'Avatar',
-        icon: 'user.svg',
+        icon: 'avatar.svg',
         source: [
           'Avatar',
         ],
@@ -397,20 +618,32 @@ export const structure = [
           },
         ],
       },
-    ],
-  },
-  {
-    type: 'section',
-    name: 'Services',
-    children: [
       {
-        type: 'page',
-        name: 'ModalService',
-        children: [
+        type: 'tabs',
+        name: 'Spinner',
+        icon: 'spinner.svg',
+        source: [
+          'Spinner',
+        ],
+        overview: [
           {
-            type: 'block',
-            block: 'component',
-            source: 'ModalServiceType',
+            name: 'Spinner',
+            images: ['spinner.png'],
+          },
+        ],
+      },
+      {
+        type: 'tabs',
+        name: 'Calendar',
+        icon: 'calendar.svg',
+        source: [
+          'Calendar',
+          'RangeCalendar',
+        ],
+        overview: [
+          {
+            name: 'Calendar',
+            images: [],
           },
         ],
       },

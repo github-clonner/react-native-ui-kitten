@@ -1,3 +1,260 @@
+## <small>4.4.1 (2020-02-24)</small>
+
+### :star: Highlights
+
+Improving performance with build-time Eva processing [#517](https://github.com/akveo/react-native-ui-kitten/issues/517#issuecomment-590213844)
+
+* Add @ui-kitten/metro-config package [#613](https://github.com/akveo/react-native-ui-kitten/issues/613) [#855](https://github.com/akveo/react-native-ui-kitten/issues/855) [12230c6](https://github.com/akveo/react-native-ui-kitten/commit/12230c6))
+
+
+## 4.4.0 (2020-02-10)
+
+### :star: Highlights
+
+Eva Material compatibility! :tada: [#517](https://github.com/akveo/react-native-ui-kitten/issues/517#issuecomment-584100452)
+
+### :rocket: Features
+
+* Add `onFocus` and `onBlur` props to input-based components ([#857](https://github.com/akveo/react-native-ui-kitten/issues/857)) ([422b523](https://github.com/akveo/react-native-ui-kitten/commit/422b523))
+* **Datepicker**: Add `backdropStyle` prop ([#849](https://github.com/akveo/react-native-ui-kitten/issues/849))([d69cc02](https://github.com/akveo/react-native-ui-kitten/commit/d69cc02))
+* **Autocomplete**: Add `placement` prop ([#845](https://github.com/akveo/react-native-ui-kitten/issues/845))([c61f63e](https://github.com/akveo/react-native-ui-kitten/commit/c61f63e))
+* **Demo App**: [Kitten Tricks](https://github.com/akveo/kittenTricks) is used as a runnable framework demo ([1b987c1](https://github.com/akveo/react-native-ui-kitten/commit/1b987c1))
+
+### :bug: Bug Fixes
+
+* **Modal**: State update during render ([#847](https://github.com/akveo/react-native-ui-kitten/issues/847)) ([39632ea](https://github.com/akveo/react-native-ui-kitten/commit/39632ea))
+* **Input**: Extra vertical padding on Android ([#609](https://github.com/akveo/react-native-ui-kitten/issues/609)) ([c27c610](https://github.com/akveo/react-native-ui-kitten/commit/c27c610))
+* **Documentation**: fix example usage of theme variable ([#871](https://github.com/akveo/react-native-ui-kitten/issues/871)) [617b40d](https://github.com/akveo/react-native-ui-kitten/commit/617b40d)
+
+## 4.4.0-beta.3 (2020-01-21)
+
+### :star: Highlights
+
+Rethinking useStyleSheet hook and improvements [#517](https://github.com/akveo/react-native-ui-kitten/issues/517#issuecomment-576569359)
+
+* Add ability to specify date format in Calendar and Datepicker components ([#815](https://github.com/akveo/react-native-ui-kitten/issues/815)) ([705dc97](https://github.com/akveo/react-native-ui-kitten/commit/705dc97))
+* **Select**: Fix props mutation issue and update strategies ([#804](https://github.com/akveo/react-native-ui-kitten/issues/804)) ([de531b9](https://github.com/akveo/react-native-ui-kitten/commit/de531b9))
+* **BREAKING CHANGE**: useStyleSheet hook was reimplemented due to not following Rules of Hooks([#831](https://github.com/akveo/react-native-ui-kitten/issues/831)) ([8b33c91](https://github.com/akveo/react-native-ui-kitten/commit/8b33c91))
+
+
+
+## 4.4.0-beta.2 (2020-01-16)
+
+### :star: Highlights
+
+Bug fixes and improvements [#517](https://github.com/akveo/react-native-ui-kitten/issues/517#issuecomment-575060796)
+
+### :rocket: Features
+
+* **Modal**: hide when unmounted ([#735](https://github.com/akveo/react-native-ui-kitten/issues/735)) ([8b2721a](https://github.com/akveo/react-native-ui-kitten/commit/8b2721a))
+* Add direct manipulation methods to input components ([#801](https://github.com/akveo/react-native-ui-kitten/issues/801) [#802](https://github.com/akveo/react-native-ui-kitten/issues/802)) ([01399d7](https://github.com/akveo/react-native-ui-kitten/commit/01399d7))
+* Add direct manipulation methods to modal components ([#808](https://github.com/akveo/react-native-ui-kitten/issues/808) [#813](https://github.com/akveo/react-native-ui-kitten/issues/813)) ([8b2721a](https://github.com/akveo/react-native-ui-kitten/commit/8b2721a))
+* **Demo App**: [Kitten Tricks](https://github.com/akveo/kittenTricks) is used as a runnable framework demo ([1b987c1](https://github.com/akveo/react-native-ui-kitten/commit/1b987c1))
+
+### :bug: Bug Fixes
+
+* **Autocomplete**: Runtime crash on Android ([#800](https://github.com/akveo/react-native-ui-kitten/issues/800)) ([1aa3864](https://github.com/akveo/react-native-ui-kitten/commit/1aa3864))
+* **Input**: Add ability to use placeholderTextColor property ([#828](https://github.com/akveo/react-native-ui-kitten/issues/828)) ([e10f6c7](https://github.com/akveo/react-native-ui-kitten/commit/e10f6c7))
+* **Modal**: Ability to interact with modal contents on Android ([#807](https://github.com/akveo/react-native-ui-kitten/issues/807)) ([5c78095](https://github.com/akveo/react-native-ui-kitten/commit/5c78095))
+* **Select**: Add vertical scroll indicator ([#794](https://github.com/akveo/react-native-ui-kitten/issues/807)) ([231ba89](https://github.com/akveo/react-native-ui-kitten/commit/231ba89))
+
+
+
+## 4.4.0-beta.1 (2020-01-03)
+
+### :star: Highlights
+
+Autocomplete component and Hooks [#517](https://github.com/akveo/react-native-ui-kitten/issues/517#issuecomment-570506225)
+
+### :rocket: Features
+
+* **Autocomplete**: new UI Kitten component ([#750](https://github.com/akveo/react-native-ui-kitten/issues/750)) ([fd63d7b](https://github.com/akveo/react-native-ui-kitten/commit/fd63d7b))
+* **Styling & Theming**: add useTheme and useStyleSheet hooks ([#676](https://github.com/akveo/react-native-ui-kitten/issues/676)), ([#752](https://github.com/akveo/react-native-ui-kitten/issues/752)) ([67a8f8f](https://github.com/akveo/react-native-ui-kitten/commit/67a8f8f))
+
+
+## <small>4.3.2 (2019-12-13)</small>
+
+### :star: Highlights
+
+Resolve webpack and calendar performance issues [#517](https://github.com/akveo/react-native-ui-kitten/issues/517#issuecomment-565398953)
+
+### :bug: Bug Fixes
+
+* **Web**: resolve webpack build issues ([#763](https://github.com/akveo/react-native-ui-kitten/issues/763), [#729](https://github.com/akveo/react-native-ui-kitten/issues/729), [#792](https://github.com/akveo/react-native-ui-kitten/issues/792)) ([2ca7cd0](https://github.com/akveo/react-native-ui-kitten/commit/2ca7cd0))
+* **Datepicker**: performance issue ([#641](https://github.com/akveo/react-native-ui-kitten/issues/641)) ([85bb1df](https://github.com/akveo/react-native-ui-kitten/commit/85bb1df))
+* **Calendar**: navigation buttons in RTL mode ([#739](https://github.com/akveo/react-native-ui-kitten/issues/739)) ([85bb1df](https://github.com/akveo/react-native-ui-kitten/commit/85bb1df))
+
+
+## <small>4.3.1 (2019-12-04)</small>
+
+This is a patch release to update incorrectly built packages ([#757](https://github.com/akveo/react-native-ui-kitten/issues/757))
+
+
+## 4.3.0 (2019-12-04)
+
+### :star: Highlights
+
+Bring consistency in component styling with Eva 1.3 unified design [#517](https://github.com/akveo/react-native-ui-kitten/issues/517#issuecomment-561593655)
+
+### :bug: Bug Fixes
+
+* Unify the way of styling components provided with `icon` property ([156646d](https://github.com/akveo/react-native-ui-kitten/commit/156646d))
+* **Calendar**: year selection when `min` and `max` properties provided ([#688](https://github.com/akveo/react-native-ui-kitten/issues/688)) ([61e4806](https://github.com/akveo/react-native-ui-kitten/commit/61e4806))
+* **Calendar**: navigation in negative timezone ([#712](https://github.com/akveo/react-native-ui-kitten/issues/712), [#713](https://github.com/akveo/react-native-ui-kitten/issues/713)) ([700a902](https://github.com/akveo/react-native-ui-kitten/commit/700a902))
+* **List**: add ability to override `keyExtractor` property ([#716](https://github.com/akveo/react-native-ui-kitten/issues/716)) ([d5ee185](https://github.com/akveo/react-native-ui-kitten/commit/d5ee185))
+* **Modal**: center positioning on screen resize ([#699](https://github.com/akveo/react-native-ui-kitten/issues/699)) ([301e3f4](https://github.com/akveo/react-native-ui-kitten/commit/301e3f4))
+
+### :rocket: Features
+
+* Synchronize with Eva 1.3 ([c958482](https://github.com/akveo/react-native-ui-kitten/commit/c958482))
+* **Card**: new UI Kitten component ([f6c5899](https://github.com/akveo/react-native-ui-kitten/commit/f6c5899))
+* **Datepicker**: add `placeholder` property ([#721](https://github.com/akveo/react-native-ui-kitten/issues/721)) ([d34bcd4](https://github.com/akveo/react-native-ui-kitten/commit/d34bcd4))
+* **Template packages**: upgrade to react-native 0.61.5 ([3759572](https://github.com/akveo/react-native-ui-kitten/commit/3759572))
+* **Documentation**: Simplify Getting Started ([a93bfed](https://github.com/akveo/react-native-ui-kitten/commit/a93bfed))
+
+### :bomb: BREAKING CHANGES
+
+* `react-native-svg` package is now required and included in peer dependencies
+* deprecate `react-native-ui-kitten` package in order to `@ui-kitten/components`. An old package will be supported till v5
+
+## 4.3.0-beta.1 (2019-10-17)
+
+### :star: Highlights
+
+Clickable examples in documentation and handling of Hover and Focus states in the web ([#517](https://github.com/akveo/react-native-ui-kitten/issues/517#issuecomment-543216191))
+
+### :bug: Bug Fixes
+
+* **ButtonGroup**: last button render issues ([#516](https://github.com/akveo/react-native-ui-kitten/issues/516)) ([bcbf06a](https://github.com/akveo/react-native-ui-kitten/commit/bcbf06a))
+* **Calendar**: navigation when `min` and `max` properties provided ([75e42dd](https://github.com/akveo/react-native-ui-kitten/commit/75e42dd))
+* **Select**: handling the initial value if passed inline ([ab0703a](https://github.com/akveo/react-native-ui-kitten/commit/ab0703a))
+
+### :rocket: Features
+
+* **Calendar**: add ability to override start day of week ([#682](https://github.com/akveo/react-native-ui-kitten/issues/682)) ([1d7a341](https://github.com/akveo/react-native-ui-kitten/commit/1d7a341))
+* **Web**: handle `focus` and `hover` states with Eva ([84ef56b](https://github.com/akveo/react-native-ui-kitten/commit/84ef56b))
+* **Documentation**: Enhanace with clickable examples ([a08e1d3](https://github.com/akveo/react-native-ui-kitten/commit/a08e1d3))
+* **Documentation**: Add Eva theme variable tables ([a99cb7e](https://github.com/akveo/react-native-ui-kitten/commit/a99cb7e))
+
+
+## 4.2.0 (2019-09-27)
+
+* feat(ui): add font-family for each component that has text ([aa11e1c](https://github.com/akveo/react-native-ui-kitten/commit/aa11e1c))
+* feat(ui): animation-config property to Icon component add ([060fe5d](https://github.com/akveo/react-native-ui-kitten/commit/060fe5d))
+* feat(ui): calendar/datepicker components add ([a51159c](https://github.com/akveo/react-native-ui-kitten/commit/a51159c))
+* feat(ui): eva 1.2 mappings and documentation adopt ([d35c244](https://github.com/akveo/react-native-ui-kitten/commit/d35c244))
+* feat(ui): toggle - add text property ([327ce36](https://github.com/akveo/react-native-ui-kitten/commit/327ce36))
+* feat(ui): top-navigation - control appearance ([7fe81f2](https://github.com/akveo/react-native-ui-kitten/commit/7fe81f2))
+* docs(components): add top-navigation with menu example ([5e84acd](https://github.com/akveo/react-native-ui-kitten/commit/5e84acd))
+* docs(components): refactor examples with js code and framework icon components ([5468776](https://github.com/akveo/react-native-ui-kitten/commit/5468776))
+* docs(components): update drawer documentation ([c4ac3a8](https://github.com/akveo/react-native-ui-kitten/commit/c4ac3a8))
+* docs(guides): missing app name in command example ([4de7c9f](https://github.com/akveo/react-native-ui-kitten/commit/4de7c9f))
+* refactor(docs): drawer/icon/select/spinner/checkbox/layout documentation refactor ([44ea5c3](https://github.com/akveo/react-native-ui-kitten/commit/44ea5c3))
+* refactor(docs): input docs expand ([e7abe28](https://github.com/akveo/react-native-ui-kitten/commit/e7abe28))
+* refactor(docs): OverflowMenu example changed ([c4bbda4](https://github.com/akveo/react-native-ui-kitten/commit/c4bbda4))
+* refactor(script): set env script to be executable with node ([f317e38](https://github.com/akveo/react-native-ui-kitten/commit/f317e38))
+* refactor(template): update template modules to new cli config ([3bc19af](https://github.com/akveo/react-native-ui-kitten/commit/3bc19af))
+* refactor(ui): drawer support component naming refactor ([113822c](https://github.com/akveo/react-native-ui-kitten/commit/113822c))
+* refactor(ui): modal - backdrop style prop type declaration ([b9658a4](https://github.com/akveo/react-native-ui-kitten/commit/b9658a4))
+* refactor(ui): text - allow text element in children ([a9904fc](https://github.com/akveo/react-native-ui-kitten/commit/a9904fc))
+* fix(docs): bottom navigation docs-examples fix ([6bf8f4f](https://github.com/akveo/react-native-ui-kitten/commit/6bf8f4f))
+* fix(ui): modal with backdrop update functionality fix ([37a0090](https://github.com/akveo/react-native-ui-kitten/commit/37a0090))
+* fix(ui): select - selectedOption value change ([ae886a4](https://github.com/akveo/react-native-ui-kitten/commit/ae886a4))
+* fix(ui): tab-view - tab content size ([ea2cc59](https://github.com/akveo/react-native-ui-kitten/commit/ea2cc59))
+* build(common): update jest version & remove ts-jest (#629) ([66f04ca](https://github.com/akveo/react-native-ui-kitten/commit/66f04ca)), closes [#629](https://github.com/akveo/react-native-ui-kitten/issues/629)
+
+
+
+## 4.2.0-beta.2 (2019-08-30)
+
+* refactor(framework): install-templates functionality return ([8b3642f](https://github.com/akveo/react-native-ui-kitten/commit/8b3642f))
+* refactor(ui): bottom-navigation documentation update ([144abb4](https://github.com/akveo/react-native-ui-kitten/commit/144abb4))
+* refactor(ui): dropdown styles and refactor ([f488839](https://github.com/akveo/react-native-ui-kitten/commit/f488839))
+* refactor(ui): export react element types ([fced535](https://github.com/akveo/react-native-ui-kitten/commit/fced535))
+* refactor(ui): overflow-menu re-implement ([324995a](https://github.com/akveo/react-native-ui-kitten/commit/324995a))
+* refactor(ui): spinner playground and documentation refactor ([2decd53](https://github.com/akveo/react-native-ui-kitten/commit/2decd53))
+* fix(docs): landing style fix ([e88e90b](https://github.com/akveo/react-native-ui-kitten/commit/e88e90b))
+* fix(ui): fix a bug with view pager where slides could go out of boundry ([1011189](https://github.com/akveo/react-native-ui-kitten/commit/1011189))
+* fix(ui): modal docs fix ([9a93a70](https://github.com/akveo/react-native-ui-kitten/commit/9a93a70))
+* fix(ui): sub-menu components items onPress handling fix ([573d76c](https://github.com/akveo/react-native-ui-kitten/commit/573d76c))
+* fix(ui): view-pager - external state control ([e5285d7](https://github.com/akveo/react-native-ui-kitten/commit/e5285d7))
+* feat(docs): overview-examples handling add ([5b7cdeb](https://github.com/akveo/react-native-ui-kitten/commit/5b7cdeb))
+* feat(eva-icons): add eva-icons module ([e1a1495](https://github.com/akveo/react-native-ui-kitten/commit/e1a1495))
+* feat(template): add ui-kitten template projects ([0a3ec77](https://github.com/akveo/react-native-ui-kitten/commit/0a3ec77))
+* feat(ui): drawer component ([e98f3ea](https://github.com/akveo/react-native-ui-kitten/commit/e98f3ea))
+* feat(ui): dropdown component ([1b2211c](https://github.com/akveo/react-native-ui-kitten/commit/1b2211c))
+* feat(ui): menu component ([73abe87](https://github.com/akveo/react-native-ui-kitten/commit/73abe87))
+* feat(ui): popover - autoplacement ([27eac63](https://github.com/akveo/react-native-ui-kitten/commit/27eac63))
+* feat(ui): RTL support ([14bf854](https://github.com/akveo/react-native-ui-kitten/commit/14bf854))
+* feat(ui): select styles namings refactor ([6eec5ca](https://github.com/akveo/react-native-ui-kitten/commit/6eec5ca))
+* feat(ui): spinner component ([c80d62d](https://github.com/akveo/react-native-ui-kitten/commit/c80d62d))
+* docs(ui): overview-examples add ([647f254](https://github.com/akveo/react-native-ui-kitten/commit/647f254))
+* build(common): update expo to sdk 34 ([c72f7f6](https://github.com/akveo/react-native-ui-kitten/commit/c72f7f6))
+* feat(ui/theme): "modal-team" missing update functionality add ([71dd6f7](https://github.com/akveo/react-native-ui-kitten/commit/71dd6f7))
+
+
+
+## 4.1.0 (2019-07-10)
+
+* docs(guides): fix create-screen import typo ([20134ab](https://github.com/akveo/react-native-ui-kitten/commit/20134ab))
+* refactor(docs): doc-prsr version update ([241ade4](https://github.com/akveo/react-native-ui-kitten/commit/241ade4))
+* refactor(ui): modal component reimplement ([97afa07](https://github.com/akveo/react-native-ui-kitten/commit/97afa07))
+* refactor(ui): modal-based components API refactor ([6aea312](https://github.com/akveo/react-native-ui-kitten/commit/6aea312))
+* feat(docs): expand custom-mapping guide ([54310b6](https://github.com/akveo/react-native-ui-kitten/commit/54310b6))
+* feat(ui): input - icon press handler ([9e192ea](https://github.com/akveo/react-native-ui-kitten/commit/9e192ea))
+* feat(ui): react-native-web adopt ([59b4cb6](https://github.com/akveo/react-native-ui-kitten/commit/59b4cb6))
+
+
+
+## <small>4.0.5 (2019-06-28)</small>
+
+* package: hold @eva-design/* packages on a minor version ([d0fc72a](https://github.com/akveo/react-native-ui-kitten/commit/d0fc72a))
+* docs(readme): update design system link ([46156b5](https://github.com/akveo/react-native-ui-kitten/commit/46156b5))
+
+
+
+## <small>4.0.4 (2019-06-27)</small>
+
+* fix(docs): toggle docs fix ([84246ef](https://github.com/akveo/react-native-ui-kitten/commit/84246ef))
+* fix(readme): missing tag add ([3fd790c](https://github.com/akveo/react-native-ui-kitten/commit/3fd790c))
+* fix(ui): add input api methods ([f6395ed](https://github.com/akveo/react-native-ui-kitten/commit/f6395ed))
+* fix(ui): checkbox - usage docs ([5234f85](https://github.com/akveo/react-native-ui-kitten/commit/5234f85))
+* build(common): typescript common issues ([fb4d6ff](https://github.com/akveo/react-native-ui-kitten/commit/fb4d6ff))
+
+
+
+## <small>4.0.3 (2019-06-21)</small>
+
+* build: fix typescript build errors ([0d0a784](https://github.com/akveo/react-native-ui-kitten/commit/0d0a784))
+* feat(ui): add custom warnings for incorrect component usage ([981d5c8](https://github.com/akveo/react-native-ui-kitten/commit/981d5c8))
+* Update toggle component doc and example ([4fd7ea1](https://github.com/akveo/react-native-ui-kitten/commit/4fd7ea1))
+
+
+
+## <small>4.0.2 (2019-06-20)</small>
+
+* feat: add hover styles for white buttons ([caacbc2](https://github.com/akveo/react-native-ui-kitten/commit/caacbc2))
+* feat(docs): add contact us link (#455) ([450ab18](https://github.com/akveo/react-native-ui-kitten/commit/450ab18)), closes [#455](https://github.com/akveo/react-native-ui-kitten/issues/455)
+* feat(playground): bump expo to 33.0.6 ([a7cb55f](https://github.com/akveo/react-native-ui-kitten/commit/a7cb55f))
+* docs: add algolia search (#457) ([b9872ab](https://github.com/akveo/react-native-ui-kitten/commit/b9872ab)), closes [#457](https://github.com/akveo/react-native-ui-kitten/issues/457)
+* docs(dev): update DEV_DOCS.md ([6dc56c2](https://github.com/akveo/react-native-ui-kitten/commit/6dc56c2))
+* docs(dev): update DEV_DOCS.md with Kitten Tricks guides ([a3772c7](https://github.com/akveo/react-native-ui-kitten/commit/a3772c7))
+* docs(guides): add design system guides ([165247e](https://github.com/akveo/react-native-ui-kitten/commit/165247e))
+* fix: double scroll ([ad67cee](https://github.com/akveo/react-native-ui-kitten/commit/ad67cee))
+* fix: prevent header disappearing when selecting version ([6e38aff](https://github.com/akveo/react-native-ui-kitten/commit/6e38aff))
+* fix: remove overflow in reviews ([37393d6](https://github.com/akveo/react-native-ui-kitten/commit/37393d6))
+* fix: use capital k in kitten ([f325111](https://github.com/akveo/react-native-ui-kitten/commit/f325111))
+* fix(docs): fix dev-docs Kitten Tricks reference ([91a1e60](https://github.com/akveo/react-native-ui-kitten/commit/91a1e60))
+* fix(docs): fix dev-docs typos ([1c83e23](https://github.com/akveo/react-native-ui-kitten/commit/1c83e23))
+* fix(docs): ie fixes ([39abc18](https://github.com/akveo/react-native-ui-kitten/commit/39abc18))
+* fix(docs): make menu button clickable ([f0234bf](https://github.com/akveo/react-native-ui-kitten/commit/f0234bf))
+* fix(docs): proper cross sections links (#452) ([7bd9ec5](https://github.com/akveo/react-native-ui-kitten/commit/7bd9ec5)), closes [#452](https://github.com/akveo/react-native-ui-kitten/issues/452)
+* fix(docs): theme import typo ([6445a4b](https://github.com/akveo/react-native-ui-kitten/commit/6445a4b))
+* fix(top-navigation): add hit-slop to actions ([ce984cf](https://github.com/akveo/react-native-ui-kitten/commit/ce984cf))
+* refactor: prevent opening links in a new tab ([ff770f2](https://github.com/akveo/react-native-ui-kitten/commit/ff770f2))
+
+
+
 ## 4.0.0 (2019-06-11)
 
 * refactor(docs): common refactor ([67e84d2](https://github.com/akveo/react-native-ui-kitten/commit/67e84d2))
